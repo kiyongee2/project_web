@@ -21,7 +21,7 @@ header h1 a{
     color: #fff;
     text-decoration: none;
 }
-header h1 a:hover{color: yellowgreen;}
+/* header h1 a:hover{color: yellowgreen;} */
 header nav{
     width: 750px; float: right;
     line-height: 80px;
