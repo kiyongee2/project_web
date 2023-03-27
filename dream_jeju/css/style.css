@@ -1,4 +1,5 @@
 /* 전체 스타일 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Nanum+Gothic+Coding&display=swap');
 *{margin: 0; padding: 0;}
 /* 16:9 화면상 1600px로 설정 */
 #container{width: 100%; margin: 0 auto;}
@@ -8,7 +9,8 @@ main{width: 1200px; margin: 0 auto; box-sizing: border-box;}
 header{height: 80px; background: rgb(9, 90, 9);}
 header #logo{width: 300px; float: left; padding-left: 30px;
     line-height: 80px;}
-#logo h1 a{color: yellowgreen; text-decoration: none;}
+#logo h1 a{color: rgb(206, 234, 150); text-decoration: none;
+   font-family: Merienda;}
 nav{width: 800px; float: right; line-height: 80px;}
 nav #topMenu{list-style: none;}
 #topMenu li{display: inline-block; padding: 0 20px;}
@@ -52,3 +54,43 @@ footer #bottomMenu{list-style: none; padding: 20px;}
     border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
 #package table, th, td{border: 1px solid #ccc; border-collapse: collapse;
     padding: 10px 20px;}
+
+/* q & a 스타일 */
+#board section h2{margin: 30px 10px; text-align: center;}
+#board #tbl_board{border: 1.5px solid rgb(2, 154, 2);
+    border-collapse: collapse; width: 700px; margin: 0 auto 20px;}
+#tbl_board thead{background-color: beige;}
+#tbl_board td:nth-child(1), 
+    td:nth-child(3), td:nth-child(4){text-align: center;}
+#tbl_board td:first-child{width: 50px;}
+.btn{text-align: right; margin-right: 250px;}
+.btn button{padding: 10px 15px; margin-bottom: 50px;}
+
+/* register 스타일 */
+#register section h2{margin: 30px 10px; text-align: center;}
+#register #tbl_write{
+    border: 1.5px solid rgb(2, 154, 2);
+    border-collapse: collapse; width: 700px; margin: 0 auto 100px; 
+}
+#tbl_write input[type="text"]{width: 650px; height: 25px;}
+#tbl_write textarea{width: 650px;}
+#tbl_write input[type="submit"], input[type="reset"]{padding: 10px 20px;}
+#tbl_write tr:last-child{ text-align: center;}
+
+/* About Me 스타일 */
+#profile section{margin: 30px 10px;}
+#profile section h1{margin-bottom: 20px;}
+#profile section h2{margin: 10px; color: blue; border-bottom: 2px dotted #666;
+    padding-bottom: 10px;}
+#profile section div{margin: 20px 10px 40px;}
+#profile ul li{margin: 16px 50px;}
+#intro{height: 350px;}
+#intro h1{font-size: 2em;}
+#intro p{line-height: 1.8;}
+#intro img{float: left; margin-right: 30px; border-radius: 5px;}
+#intro a{text-decoration: none; color: #00f;}
+#intro a:hover{text-decoration: underline;}
+#career ul li:nth-child(1){color: rgb(183, 3, 3);}
+/* #profile #career ul li:nth-of-type(1){color: #f00;} */
+#skill ul li a{text-decoration: none; color: #00f;}
+#skill ul li a:hover{text-decoration: underline; }
